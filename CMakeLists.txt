@@ -1,13 +1,13 @@
 cmake_minimum_required(VERSION 3.15)
-project(hello CXX)
+project(hallo CXX)
 
 
 
 
-add_library(hello src/hello.cpp)
-target_include_directories(hello PUBLIC include)
+add_library(hallo src/hallo.cpp)
+target_include_directories(hallo PUBLIC include)
 
 
 
-set_target_properties(hello PROPERTIES PUBLIC_HEADER "include/hello.h")
-install(TARGETS hello)
+set_target_properties(hallo PROPERTIES PUBLIC_HEADER "include/hallo.h")
+install(TARGETS hallo)

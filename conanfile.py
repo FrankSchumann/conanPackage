@@ -2,15 +2,15 @@ from conan import ConanFile
 from conan.tools.cmake import CMakeToolchain, CMake, cmake_layout, CMakeDeps
 
 
-class helloRecipe(ConanFile):
-    name = "hello"
-    version = "0.1"
+class halloRecipe(ConanFile):
+    name = "hallo"
+    version = "1.0"
 
     # Optional metadata
     license = "<Put the package license here>"
     author = "<Put your name here> <And your email here>"
     url = "<Package recipe repository url here, for issues about the package>"
-    description = "<Description of hello package here>"
+    description = "<Description of hallo package here>"
     topics = ("<Put some tag here>", "<here>", "<and here>")
 
     # Binary configuration
@@ -44,6 +44,6 @@ class helloRecipe(ConanFile):
         cmake.install()
 
     def package_info(self):
-        self.cpp_info.libs = ["hello"]
+        self.cpp_info.libs = ["hallo"]
 
     
