@@ -2,19 +2,24 @@
 
 example to create a conan package 
 
+## Build
+
+```bash
+osal-linux $ mkdir build && cd build
+osal-linux $ cmake ..
+osal-linux $ cmake --build . 
+```
+
 ## Conan
 Install package to Conan cache.
 
 ```bash
-osal-linux $ conan install . --output-folder=build 
+osal-linux $ conan create .
 ```
-
-## Build
+Build package in local directory.
 
 ```bash
-osal-linux $ cd build
-osal-linux $ cmake .. -DCMAKE_PREFIX_PATH=$(pwd)
-osal-linux $ cmake --build . 
+osal-linux $ conan build . 
 ```
 
 ## Git
